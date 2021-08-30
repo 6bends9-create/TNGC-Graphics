@@ -1,0 +1,445 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  color: black;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fas {
+  color: #333;
+  margin: 0 5px;
+}
+
+header {
+  background: #F2F236;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+header .tagline {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .tagline p {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+header .tagline button {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  background: transparent;
+}
+
+header .tagline button a {
+  font-weight: bold;
+  color: #333;
+  font-size: .7rem;
+  text-decoration: none;
+}
+
+header .logo-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  padding: 15px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo-box nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.keyVisual {
+  width: 100vw;
+  background: #F2F236;
+  text-align: center;
+  position: relative;
+  height: 650px;
+  padding-top: 500px;
+}
+
+.keyVisual h2 {
+  font-size: 36px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  display: inline-block;
+  width: 100vw;
+}
+
+.keyVisual .mv_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40vh;
+  background-image: url(img/mv.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom -5px;
+  z-index: 5;
+  display: block;
+}
+
+.keyVisual .mv_img a {
+  background: #000000;
+  border-radius: 30px;
+  padding: 15px 50px;
+  display: block;
+  margin: 0 auto;
+  color: #F2F236;
+  width: 30%;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+}
+
+.keyVisual .mv_img a a {
+  color: #F2F236;
+  font-size: 1rem;
+}
+
+.keyVisual .mv_img a:hover {
+  background: #F2F236;
+  border: 2px solid #000000;
+  border-bottom: 4px solid #000000;
+}
+
+.keyVisual .mv_img a:hover a {
+  color: #000000;
+}
+
+.keyVisual .mv_img a:hover {
+  color: #000000;
+}
+
+.banner {
+  background: #000000;
+  padding: 15px 0;
+  color: #F2F236;
+  text-align: center;
+}
+
+.sec01 {
+  background: url(img/bg_dot.gif);
+  background-repeat: repeat;
+  border-bottom: 5px solid #000000;
+}
+
+.sec01 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec01 .sec01-box {
+  width: 30%;
+}
+
+.sec01 .sec01-box .number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #000000;
+  color: #F2F236;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.sec01 .sec01-box p {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.sec01 .sec01-box .desc {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.sec02 {
+  background: url(img/bg.png);
+  background-repeat: repeat;
+}
+
+.sec02 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox {
+  padding: 100px 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 img {
+  position: absolute;
+  bottom: 0;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 h3 {
+  line-height: 3;
+  font-size: 1.5rem;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box {
+  position: relative;
+  background: #f7ff0a;
+  border: 2px solid #000000;
+  padding: 20px 30px 40px;
+  border-radius: 10px;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box p {
+  text-decoration: underline;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box:after, .sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box:before {
+  top: 100%;
+  left: 30%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box:after {
+  border-color: rgba(247, 255, 10, 0);
+  border-top-color: #f7ff0a;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+.sec02 .wrapper .sec02-about .sec02-about-flexBox .sec02-about-flexBox-1 .arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 18px;
+  margin-left: -18px;
+}
+
+.sec03 {
+  background: url(img/bg_tree.png) repeat;
+  padding: 100px 0;
+}
+
+.sec03 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.sec03 img {
+  width: 347px;
+  border: 2px solid #000000;
+}
+
+.sec03 .sec03-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+  text-align: left;
+}
+
+.sec03 .sec03-box .sec03-txt {
+  width: 60%;
+}
+
+.sec03 .sec03-box .sec03-txt h5 {
+  padding: 10px 50px 10px 20px;
+  font-size: 1.3rem;
+  background: #000000;
+  color: #fff;
+  margin: 30px 0;
+}
+
+.sec04 {
+  background: url(img/bg.png) repeat;
+  padding: 100px 0;
+}
+
+.sec04 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.sec04 .title p::before {
+  left: 47%;
+}
+
+.sec04 .parent {
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.sec04 .parent img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+  border: 3px solid #000000;
+}
+
+.sec04 .portfolio-btn {
+  background: #000000;
+  border-radius: 30px;
+  padding: 15px 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sec04 .portfolio-btn a {
+  color: #F2F236;
+  font-size: 1rem;
+}
+
+.sec04 .portfolio-btn:hover {
+  background: #F2F236;
+  border: 2px solid #000000;
+  border-bottom: 4px solid #000000;
+}
+
+.sec04 .portfolio-btn:hover a {
+  color: #000000;
+}
+
+.sec05 {
+  background: #F2F236;
+  padding: 30px 0;
+}
+
+.sec05 p {
+  padding: 30px 0;
+  font-size: 1.2rem;
+}
+
+.sec05 .message-btn {
+  background: #000000;
+  border-radius: 30px;
+  padding: 15px 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sec05 .message-btn a {
+  color: #F2F236;
+  font-size: 1rem;
+}
+
+.sec05 .message-btn:hover {
+  background: #F2F236;
+  border: 2px solid #000000;
+  border-bottom: 4px solid #000000;
+}
+
+.sec05 .message-btn:hover a {
+  color: #000000;
+}
+
+footer {
+  background: #000000;
+  color: white;
+  padding: 50px 0;
+  font-size: 10px;
+}
+
+footer img {
+  width: 20%;
+}
+
+footer .tagline {
+  padding: 20px 0;
+}
+
+footer .address {
+  font-size: 10px;
+  padding: 20px 0;
+  line-height: 2;
+}
+/*# sourceMappingURL=style.css.map */

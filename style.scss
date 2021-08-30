@@ -1,0 +1,243 @@
+$maincolor: #F2F236;
+$subcolor: #000000;
+
+@mixin btn {
+	background: $subcolor;
+	border-radius: 30px;
+	padding: 15px 50px;
+	display: block;
+	margin: 0 auto;
+	a {color: $maincolor; font-size: 1rem;}
+	&:hover {
+		background: $maincolor;
+		border: 2px solid $subcolor;
+		border-bottom: 4px solid $subcolor;
+		a {color: $subcolor;}
+	}
+}
+
+@mixin wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+}
+// .title {
+// 	h3 {line-height: 2; font-size: 1.8rem;}
+// 	p {
+// 		width: 100%;
+// 		line-height: 2.5;
+// 		&::before {
+// 			width: 80px; height: 1px; background-color: $subcolor; content: ""; position: absolute; left: 45%; }}
+// }
+
+* ,
+*::after,
+*::before {
+	transition: all .2s;
+	box-sizing: border-box;
+	margin: 0;padding: 0;
+	list-style: none;
+	letter-spacing: 1.3px;
+	text-align: center;
+}
+body {font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+	color: rgb(0, 0, 0);
+	line-height: 1.8;}
+
+a {text-decoration: none; color: $subcolor;}
+.fas {color: #333; margin: 0 5px;}
+
+
+header {
+	background: $maincolor;
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	.tagline {
+			@include wrapper ;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {font-size: .8rem; font-weight: bold;}
+			button {
+				padding: 5px;border-radius: 3px;
+				border: 1px solid #333; background: transparent;
+				a {font-weight: bold; color: #333; font-size: .7rem; text-decoration: none;}
+			}
+		}
+
+	.logo-box {
+		@include wrapper;
+		padding: 15px 0 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		nav ul li {display: inline-block; margin: 0 5px; font-size: 14px;}
+	}
+
+}
+
+.keyVisual {
+	width: 100vw;
+	background: $maincolor;
+	text-align: center;
+	position: relative;
+	height: 650px;
+	padding-top: 500px;
+	h2 {
+	font-size: 36px; transform: translate(-50%,-50%); position: absolute;top: 30%; display: inline-block; width: 100vw;}
+	.mv_img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 40vh;
+		background-image: url(img/mv.svg);
+		background-repeat: no-repeat;
+		background-position: center bottom -5px;
+		z-index: 5;
+		display: block;
+		a {@include btn; color: $maincolor; width: 30%; position: absolute; bottom: 5%; left: 35%; }
+		a:hover {color: $subcolor;}
+}
+}
+
+.banner {background: $subcolor;padding: 15px 0; color: $maincolor; text-align: center;
+span {
+
+}}
+
+.sec01 {
+	background: url(img/bg_dot.gif);
+	background-repeat: repeat;
+	border-bottom: 5px solid $subcolor;
+	.wrapper {@include wrapper;padding: 30px 0; display: flex; justify-content: space-between;
+	}
+	.sec01-box {
+		width: 30%;
+		.number {width: 60px; height: 60px;border-radius: 50%; background: $subcolor;color: $maincolor; display: inline-block; font-size: 2rem; line-height: 1.8;}
+		p {
+			padding: 10px 0;
+			font-weight: bold;
+		}
+		.desc {text-align: left;font-weight: normal; font-size: 1.1rem;}
+
+	}
+}
+
+.sec02 {
+	background: url(img/bg.png);
+	background-repeat: repeat;
+	.wrapper {@include wrapper; padding: 100px 0;
+
+		.sec02-about {
+			.about {}
+			.sec02-about-flexBox {
+				padding: 100px 0 150px;
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				.sec02-about-flexBox-1 {
+					img {position: absolute; bottom: 0; }
+					h3 {line-height: 3; font-size: 1.5rem;}
+					.arrow_box {
+						position: relative;
+						background: #f7ff0a;
+						border: 2px solid #000000;
+						padding: 20px 30px 40px;
+						border-radius: 10px;
+
+						p {
+							text-decoration: underline;
+							line-height: 2;
+
+							font-weight: bold;
+						}
+					}
+					.arrow_box:after, .arrow_box:before {
+						top: 100%;
+						left: 30%;
+						border: solid transparent;
+						content: "";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+					}
+
+					.arrow_box:after {
+						border-color: rgba(247, 255, 10, 0);
+						border-top-color: #f7ff0a;
+						border-width: 15px;
+						margin-left: -15px;
+					}
+					.arrow_box:before {
+						border-color: rgba(0, 0, 0, 0);
+						border-top-color: #000000;
+						border-width: 18px;
+						margin-left: -18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.sec03 {
+	background:url(img/bg_tree.png) repeat;
+	.wrapper {@include wrapper;}
+	padding: 100px 0;
+	img {width: 347px; border: 2px solid $subcolor;}
+	.sec03-box {display: flex; align-items: center;justify-content: space-between;  margin: 50px 0; text-align: left;
+		.sec03-txt {width: 60%;
+h5 {
+	padding: 10px 50px 10px 20px;
+	font-size: 1.3rem;
+	background: $subcolor;
+	color: #fff;
+	margin: 30px 0;
+}
+		}
+
+}
+}
+
+.sec04 {
+	background: url(img/bg.png) repeat;
+	padding: 100px 0;
+	.wrapper {@include wrapper;}
+	.title {
+		p {
+		&::before {
+			 left: 47%; }}
+	}
+	.parent {
+		padding: 100px 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		img {height: 400px;width: 100%; object-fit: cover;border-radius: 3px; border: 3px solid $subcolor;}
+	}
+	.portfolio-btn {@include btn;}
+}
+
+.sec05 {
+	background: $maincolor;
+	padding: 30px 0;
+	p {padding: 30px 0; font-size: 1.2rem}
+	.message-btn {@include btn;}
+}
+
+footer {
+	background: $subcolor; color: white;
+	padding: 50px 0;
+	font-size: 10px;
+	img {width: 20%;}
+	.tagline {padding: 20px 0; }
+	.address {font-size: 10px;padding: 20px 0;line-height: 2;}
+}
